@@ -7,10 +7,16 @@
     Shell.FlyoutBehavior="Disabled"
     xmlns:views="clr-namespace:MobileAppIoTController.Views"
     Title="MobileAppIoTController">
-    
-    <ShellContent
+
+    <TabBar FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
         Title="Switch States"
         ContentTemplate="{DataTemplate views:SwitchStatesPage}"
         Route="SwitchStatesPage" />
 
+        <ShellContent
+        Title="Text Message"
+        ContentTemplate="{DataTemplate views:TextMessagePage}"
+        Route="TextMessagePage" />
+    </TabBar>
 </Shell>
