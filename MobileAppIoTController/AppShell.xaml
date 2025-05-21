@@ -18,5 +18,10 @@
         Title="Text Message"
         ContentTemplate="{DataTemplate views:TextMessagePage}"
         Route="TextMessagePage" />
+        
+        <ShellContent
+            Title="Temperature"
+            ContentTemplate="{DataTemplate views:TemperaturePage}"
+            Route="TemperaturePage" />
     </TabBar>
 </Shell>

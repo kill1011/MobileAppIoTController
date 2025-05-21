@@ -26,6 +26,7 @@ namespace MobileAppIoTController
             builder.Logging.AddDebug();
 #endif
             builder.Services.AddSingleton<SwitchStatesViewModel>();
+            builder.Services.AddSingleton<TemperatureViewModel>();
             builder.Services.AddSingleton<TextMessageViewModel>();
             builder.Services.AddSingleton<IIoTService, FirebaseIoTService>();
             return builder.Build();
